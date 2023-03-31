@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .4s ease;
+    letter-spacing: .4px; 
+}
+.container{
+    max-width: 1320px;
+    width: 90%;
+    margin: 0 auto;
+}
+/* ..............nav........... */
+nav{
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    /* box-shadow: #407aff 0 0 0.9rem; */
+    animation: animation infinite 1s ease-in;  
+    background: #fafafa;  
+    padding-top: .5rem;
+
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+ul,.button-aria{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 35px;  
+}
+.logo a{
+    color: #7aa3ff; 
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.logo a span{
+    color:#ff8c7a;
+}
+
+ul li a{
+    color: #ff8c7a;  
+    font-size: 17px; 
+    
+}
+ul li a:hover{
+    color: #7aa3ff;
+}
+.btn{
+    display: inline-block;
+    color: #7aa3ff;
+    padding: 10px 24px;
+    border: #7aa3ff 1.4px solid ;
+    border-radius: .5rem;
+    font-weight: 400;
+    font-size: 17px;
+}
+.btn:hover{
+    background: #7aa3ff;
+    color: white;
+}
+.btn-primary{
+    border: 1.4px solid #ff8c7a;  
+    background: #ff8c7a;
+    color: white;      
+}
+.btn-primary:hover{
+    background: none;
+    color: #ff8c7a;
+}
+/* ..............nav........... */
+
+
+/* ..............Header........... */
+header{
+    height: 100vh;
+    padding-top: 8rem;
+    background: #e1eaf8;  
+}
+.header-cotnainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    align-items: center;
+    gap: 3rem;
+    box-shadow: #407aff 0 0 0.9rem;
+    padding: 40px;   
+    animation: animation infinite 1s ease-in;   
+    background: #fafafa;  
+    border-radius: 1rem;  
+}
+@keyframes animation{
+    0%{
+        box-shadow: 0 0 1rem #ff8c7a;
+    }
+    100%{
+        box-shadow: 0 0 1rem #407aff;
+    }
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+.header-left h1{
+    font-size: 50px;
+    line-height: 64px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #407aff;
+}
+.header-left h1 span{
+    color: #ff8c7a;
+}
+.header-left p{
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: #407aff;
+    width: 90%;    
+}
+form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+form input{
+    outline: none;
+    padding: 10px 24px;
+}
+form input:nth-child(1){
+    border: none;
+    box-shadow: #ff8c7a 0 0 0.2rem;
+    color: #407aff;
+    background: #fafafa;
+}
+form input:last-child{
+    box-shadow: #ff8c7a 0 0 .2rem;
+    border: 1px solid #407aff;
+    background: #407aff;
+    color: #fafafa;
+}
+form input:last-child:hover{
+    background: #fafafa;
+    color: #407aff;
+}
+.socila-aria{
+    display: flex;
+    align-items: center;
+    gap: 27px; 
+    margin: 0 auto;
+}
+.socila-aria a{
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    background: #ff8c7a; 
+}
+.socila-aria a i{
+    background: transparent;
+    color: #fafafa;
+    font-size: 16px;
+}
+.socila-aria a:hover{
+    background: #407aff;
+}
+/* ..............Header........... */
